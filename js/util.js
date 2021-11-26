@@ -309,11 +309,11 @@ function exportGPX(layers, layers_intersection) {
 	
 
 	var gpx = '<?xml version="1.0" encoding="UTF-8" standalone="no" ?>\n';
-    gpx += '<gpx creator="maxheight.bplaced.net" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1';
-    gpx += ' http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1';
-    gpx += ' http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3';
-    gpx += ' http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd" xmlns="http://www.topografix.com/GPX/1/1"';
-    gpx += ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">\n';
+    gpx += '<gpx creator="maxheight.bplaced.net" version="1.1" xsi:schemaLocation="https://www.topografix.com/GPX/1/1';
+    gpx += ' https://www.topografix.com/GPX/1/1/gpx.xsd https://www.garmin.com/xmlschemas/WaypointExtension/v1';
+    gpx += ' https://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd https://www.garmin.com/xmlschemas/GpxExtensions/v3';
+    gpx += ' https://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd" xmlns="https://www.topografix.com/GPX/1/1"';
+    gpx += ' xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="https://www.garmin.com/xmlschemas/GpxExtensions/v3">\n';
     
     var counter = 1;
     var point;

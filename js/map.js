@@ -9,11 +9,11 @@ var _global_maxweight = 7.5;
 var _global_classicStyle = false;
 var _global_timeout = 20;
 
-var _global_server = 'http://dev.overpass-api.de/api_mmd_test_only/';
+var _global_server = 'https://dev.overpass-api.de/api_mmd_test_only/';
 var _global_seg_x = 1;
 var _global_seg_y = 1;
 
-var _global_server = 'http://overpass-api.de/api/';
+var _global_server = 'https://overpass-api.de/api/';
 var _global_seg_x = undefined;
 var _global_seg_y = undefined;
 
@@ -76,13 +76,13 @@ function initMap(div_id){
 		var server = getParam("server");
 		if (isNumber(server)) {
 			switch (server) {
-			case "1": _global_server = 'http://overpass-api.de/api/'; break;
-			case "2": _global_server = 'http://overpass.osm.rambler.ru/cgi/'; break;
-			case "3": _global_server = 'http://api.openstreetmap.fr/oapi/'; break;
-			case "7": _global_server = 'http://dev.overpass-api.de/api_drolbr/'; break;
-			case "8": _global_server = 'http://dev.overpass-api.de/api_mmd/'; break;
+			case "1": _global_server = 'https://overpass-api.de/api/'; break;
+			case "2": _global_server = 'https://overpass.osm.rambler.ru/cgi/'; break;
+			case "3": _global_server = 'https://api.openstreetmap.fr/oapi/'; break;
+			case "7": _global_server = 'https://dev.overpass-api.de/api_drolbr/'; break;
+			case "8": _global_server = 'https://dev.overpass-api.de/api_mmd/'; break;
 			case "9": _global_server = 'http://localhost/api/'; break;
-			default:  _global_server = 'http://overpass-api.de/api/';
+			default:  _global_server = 'https://overpass-api.de/api/';
 			}
 		}
 		
@@ -178,37 +178,37 @@ function initMap(div_id){
 	map.addLayer(osmLayer);
 
 	map.addLayer (new OpenLayers.Layer.XYZ(OpenLayers.i18n("frenchstyle"), 
-			[ "http://a.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
-			  "http://b.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
-			  "http://c.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png"],
+			[ "https://a.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
+			  "https://b.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
+			  "https://c.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png"],
 			  {  numZoomLevels: 19, 
-		attribution: '&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}));
+		attribution: '&copy; Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}));
 
 
 	map.addLayer (new OpenLayers.Layer.XYZ(OpenLayers.i18n("germanstyle"), 
-			[ "http://a.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
-			  "http://b.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
-			  "http://c.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
-			  "http://d.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png"],
+			[ "https://a.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
+			  "https://b.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
+			  "https://c.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png",
+			  "https://d.tile.openstreetmap.de/tiles/osmde/${z}/${x}/${y}.png"],
 			  {  numZoomLevels: 19, 
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, <a href="http://www.openstreetmap.de/germanstyle.html" target="_blank">About style</a>'}));
+		attribution: OpenLayers.i18n("attribution") + ', <a href="https://www.openstreetmap.de/germanstyle.html" target="_blank">About style</a>'}));
 
 	map.addLayer (new OpenLayers.Layer.OSM("Cycle Map",
-			[ 'http://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png',
-			  'http://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png',
-			  'http://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png'],
+			[ 'https://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png',
+			  'https://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png',
+			  'https://a.tile.opencyclemap.org/cycle/${z}/${x}/${y}.png'],
 			  {  transitionEffect : "resize",
 		buffer           : 0,
 		numZoomLevels    : 18,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, Tiles courtesy of <a href="http://www.opencyclemap.org/" target="_blank">Andy Allan</a>' }));
+		attribution: OpenLayers.i18n("attribution") + ', Tiles courtesy of <a href="https://www.opencyclemap.org/" target="_blank">Andy Allan</a>' }));
 
 	map.addLayer(new OpenLayers.Layer.OSM.Toolserver('Hike &amp; Bike','hikebike'));
 	map.addLayer(new OpenLayers.Layer.OSM.Toolserver('Mapnik B&amp;W','bw-mapnik'));
 	map.addLayer(new OpenLayers.Layer.OSM.Toolserver('Mapnik no labels','osm-no-labels'));
 	
 	map.addLayer(new OpenLayers.Layer.TMS(
-            "OSM Roads",  // http://www.openmapsurfer.uni-hd.de/contact.html
-            "http://korona.geog.uni-heidelberg.de/tiles/roads/",
+            "OSM Roads",  // https://www.openmapsurfer.uni-hd.de/contact.html
+            "https://korona.geog.uni-heidelberg.de/tiles/roads/",
             {
                 numZoomLevels: 20,
                 type: 'png', 
@@ -228,8 +228,8 @@ function initMap(div_id){
                 },
                 displayOutsideMaxExtent: true,
                 isBaseLayer: true,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OSM</a> contributors, ' +
-                	         '<a href="http://www.openmapsurfer.uni-hd.de/contact.html" target="_blank">GIScience Uni HD</a>' 
+                attribution: OpenLayers.i18n("attribution") +
+                	         ', <a href="https://www.openmapsurfer.uni-hd.de/contact.html" target="_blank">GIScience Uni HD</a>' 
             }
           ));
 
@@ -566,13 +566,13 @@ function initMap(div_id){
 	
 	map.addControl (new OpenLayers.Control.Maplink(
 			"potlatch",
-			"http://www.openstreetmap.org/edit?editor=potlatch2",
+			"https://www.openstreetmap.org/edit?editor=potlatch2",
 			{target: "_blank" }
 		));	
 
 	map.addControl (new OpenLayers.Control.Maplink(
 			"ideditor",
-			"http://www.openstreetmap.org/edit?editor=id",
+			"https://www.openstreetmap.org/edit?editor=id",
 			{target: "_blank" }
 		));		
 	
@@ -721,9 +721,9 @@ mapillaryLayer = new OpenLayers.Layer.Vector("Mapillary", {
         resFactor: 1,
         ratio: 1
     })],
-    attribution: '&copy; <a href="http://www.mapillary.com/legal" target="_blank">Mapillary</a>',
+    attribution: '&copy; <a href="https://www.mapillary.com/legal" target="_blank">Mapillary</a>',
     protocol: new OpenLayers.Protocol.HTTP({
-        url: "http://api.mapillary.com/v1/im/search?",
+        url: "https://api.mapillary.com/v1/im/search?",
         format: new OpenLayers.Format.GeoJSON(),
         params: {
             'max-results': 100,

@@ -252,7 +252,7 @@ function getHGVMaxspeedStyleMap() {
 				var x = feature.attributes["maxspeed:hgv"];
 				var y = parseInt (x);
 				if (!(x == undefined)) {
-					switch (true) {          // see: http://wiki.openstreetmap.org/wiki/DE:MaxSpeed_Karte
+					switch (true) {          // see: https://wiki.openstreetmap.org/wiki/DE:MaxSpeed_Karte
 					case (x == "none"):
 					case (x == "no"):
 					case (x == "unlimited"):  return "#0040FF";
@@ -669,7 +669,7 @@ function getMarkBridgeStyleMap() {
 			cursor: "pointer"
 	};
 
-	var olContext = {         // complex example: http://www.openstreetmap.org/?zoom=16&lat=50.33503&lon=7.587
+	var olContext = {         // complex example: https://www.openstreetmap.org/?zoom=16&lat=50.33503&lon=7.587
 			getColor: function(feature) {
 				switch (getLayer(feature)) {
 				case 0:  return "red";
@@ -708,7 +708,7 @@ function getMarkCombinedBridgeStyleMap() {
 		// some highways are also tagged with railway=tram. For our analysis
 		// treat this way as highway rather than railway, i.e. highway has
 		// higher prio
-		// example: http://www.openstreetmap.org/?lat=51.21238&lon=6.79094&zoom=16
+		// example: https://www.openstreetmap.org/?lat=51.21238&lon=6.79094&zoom=16
 
 		return (!(feature.attributes["railway"] == undefined) &&
 				(feature.attributes["highway"] == undefined));   
@@ -733,7 +733,7 @@ function getMarkCombinedBridgeStyleMap() {
 			cursor: "pointer"
 	};
 
-	var olContext = {         // complex example: http://www.openstreetmap.org/?zoom=16&lat=50.33503&lon=7.587
+	var olContext = {         // complex example: https://www.openstreetmap.org/?zoom=16&lat=50.33503&lon=7.587
 			getColor: function(feature) {
 
 				if (isRailway(feature)) 
@@ -774,7 +774,7 @@ function getRailwayStyleMap() {
 		// some highways are also tagged with railway=tram. For our analysis
 		// treat this way as highway rather than railway, i.e. highway has
 		// higher prio
-		// example: http://www.openstreetmap.org/?lat=51.21238&lon=6.79094&zoom=16
+		// example: https://www.openstreetmap.org/?lat=51.21238&lon=6.79094&zoom=16
 
 		return (!(feature.attributes["railway"] == undefined) &&
 				(feature.attributes["highway"] == undefined));   

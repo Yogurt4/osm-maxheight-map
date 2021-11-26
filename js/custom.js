@@ -132,7 +132,7 @@ $(document).ready(
 					if ($.browser.msie && window.XDomainRequest) {
 						// Use Microsoft XDR
 						var xdr = new XDomainRequest();
-						xdr.open("get", "http://nominatim.openstreetmap.org/" + 
+						xdr.open("get", "https://nominatim.openstreetmap.org/" + 
 								"search?format=json&q=" + encodeURI(term) + "&bounded=1&limit=8&" + 
 								"addressdetails=1&polygon=0&" + 
 //								"countrycodes=DE" + 
@@ -152,7 +152,7 @@ $(document).ready(
 					else {
 
 						$.ajax({
-							url: "http://nominatim.openstreetmap.org/search",
+							url: "https://nominatim.openstreetmap.org/search",
 							dataType: 'json',
 							cache: false,
 							data: {

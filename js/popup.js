@@ -134,7 +134,7 @@ SmartPopup.prototype.onFeatureSelect = function(feature) {
 
 		for (var tag in attr) {
 			if (attr[tag] == '') continue;
-			var title = '<a href="http://wiki.openstreetmap.org/wiki/Key:' + tag + '" target="_blank">' + tag + '</a>';
+			var title = '<a href="https://wiki.openstreetmap.org/wiki/Key:' + tag + '" target="_blank">' + tag + '</a>';
 			var value = attr[tag] || '';
 			
 			var icon = (this.images[tag] != undefined ? (this.images[tag][value] || this.images[tag]['*'] || '') : '');
@@ -159,7 +159,7 @@ SmartPopup.prototype.onFeatureSelect = function(feature) {
 		
 		if (data.osm_id) {
 		    var osm_id_link = '<a target="_blank" title="' + OpenLayers.i18n("info_title") + '" ' + 
-				                  'href="http://www.openstreetmap.org/' + data.fid.split(".")[0] + 
+				                  'href="https://www.openstreetmap.org/' + data.fid.split(".")[0] + 
 				                  '/' + data.osm_id + '">' + data.osm_id + '</a>';
 		
 		    rows.push ('<tr><th scope="row">' + data.fid.split(".")[0] + ' id</th><td/><td>' + osm_id_link + '</td></tr>');
@@ -223,7 +223,7 @@ function formatValue(text) {
     var result=[];
     for (var i=0; i<list.length;i++) {
         var value = html(OpenLayers.String.trim (list[i]));
-        if (value.substr (0,7)=='http://') {
+        if (value.substr (0,7)=='https://') {
             result.push ('<a target="_blank" href="'+value+'">'+value+'</a>');
             continue;
         }

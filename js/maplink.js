@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------------
 //	$Id: maplink.js,v 1.6 2012/02/16 18:31:56 wolf Exp wolf $
 //--------------------------------------------------------------------------------
-//	Erklaerung:	http://www.netzwolf.info/kartografie/openlayers/maplink
+//	Erklaerung:	https://www.netzwolf.info/kartografie/openlayers/maplink
 //--------------------------------------------------------------------------------
 //	Fragen, Wuensche, Bedenken, Anregungen?
 //	<openlayers(%40)netzwolf.info>
@@ -14,7 +14,7 @@ OpenLayers.Control.Maplink=OpenLayers.Class(OpenLayers.Control.Permalink,{
 	target: null,
 
 	initialize:function(element,base,options) {
-		if (!base) base = "http://www.openstreetmap.org";
+		if (!base) base = "https://www.openstreetmap.org";
 		OpenLayers.Control.Permalink.prototype.initialize.apply (this,[element,base,options]);
 	},
 

@@ -2,7 +2,7 @@
 
 require_once dirname( __FILE__ ) . '/Names.php';
 
-// Based on http://www.thefutureoftheweb.com/blog/use-accept-language-header
+// Based on https://www.codingwithjesse.com/blog/use-accept-language-header/
 $langs = array();
 if ( isset( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ) ) {
 	// break up string into pieces (languages and q factors)

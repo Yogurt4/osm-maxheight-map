@@ -3,7 +3,7 @@ Maxheight Map (aka OSM Truck QA Map)
 
 Maxheight Map is an Overpass API-based browser tool which helps you check and improve truck relevant features in OpenStreetMap. Besides identifying missing maximum height tags under (railway) bridges and tunnels, you can also validate existing tagging for maximum height, width, length and weight amongst others.
 
-[Wiki page](http://wiki.openstreetmap.org/wiki/Maxheight_Map)
+[Wiki page](https://wiki.openstreetmap.org/wiki/Maxheight_Map)
 
 Features
 ========
