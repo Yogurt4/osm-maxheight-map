@@ -21,6 +21,8 @@ function SmartPopup(map){
 		                              'default':     'no_icon.png',
 		                              '*': 'maxheight.png'    },
 			       'maxweight'    : { '*': 'maxweight.png'    },
+			       'maxweight:hgv' : { '*': 'maxweight.png'    },
+			       'maxweightrating' : { '*': 'maxweight.png'    },
 			       'maxlength'    : { '*': 'maxlength.png'    },
 			       'maxwidth'     : { '*': 'maxwidth.png'     },
 			       'maxaxleload'  : { '*': 'maxaxleload.png'  },

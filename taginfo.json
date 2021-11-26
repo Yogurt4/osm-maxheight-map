@@ -35,6 +35,14 @@
 			"object_types": ["way", "node"]			
 		},
 		{
+			"key":"maxweight:hgv",
+			"object_types": ["way", "node"]			
+		},
+		{
+			"key":"maxweightrating",
+			"object_types": ["way", "node"]			
+		},
+		{
 			"key":"maxaxleload",
 			"object_types": ["way", "node"]			
 		},		
@@ -52,6 +60,10 @@
 		},	
 		{
 			"key":"toll",
+			"object_types": ["way", "node"]			
+		},
+		{
+			"key":"toll:hgv",
 			"object_types": ["way", "node"]			
 		},
 		{

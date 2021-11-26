@@ -321,9 +321,13 @@ function initMap(div_id){
 	var olMaxweightLayer = make_layer(_global_server, '[timeout:5];' + 
 			'node(bbox)["maxweight"];out;' + 
 			'(way(bbox)[highway]["maxweight"];>;);out;' +
+			'(way(bbox)[highway]["maxweight:hgv"];>;);out;' +
+			'(way(bbox)[highway]["maxweightrating"];>;);out;' +
 			'(way(bbox)[highway]["maxweight:forward"];>;);out;' +
 			'(way(bbox)[highway]["maxweight:backward"];>;);out;' +
-			'(way(bbox)[amenity=parking]["maxweight"];>;);out;', 
+			'(way(bbox)[amenity=parking]["maxweight"];>;);out;' +
+			'(way(bbox)[amenity=parking]["maxweight:hgv"];>;);out;' +
+			'(way(bbox)[amenity=parking]["maxweightrating"];>;);out;', 
 			OpenLayers.i18n('maxweight'), getMaxweightStyleMap (), [featureFilterSimplifyLineString], false);
 
 	olMaxweightLayer.setVisibility(false);
@@ -354,11 +358,12 @@ function initMap(div_id){
 
 	olMaxlengthLayer.setVisibility(false);
 
-	// Toll (toll, toll:n3, barrier=toll_booth)
+	// Toll (toll, toll:n3, toll:hgv, barrier=toll_booth)
 	var olTollLayer = make_large_layer(_global_server, '[timeout:5];' + 
 			'node(bbox)["barrier"="toll_booth"];out;' + 
 			'(way(bbox)["barrier"="toll_booth"];>;);out;' + 
 			'(way(bbox)[highway][toll];>;);out;' + 
+			'(way(bbox)[highway]["toll:hgv"];>;);out;' + 
 			'(way(bbox)[highway]["toll:N3"];>;);out;' +
 			'(way(bbox)[highway]["toll:n3"];>;);out;', 
 			OpenLayers.i18n('toll'), getTollStyleMap (), [featureFilterSimplifyLineString], false, 8);
@@ -429,9 +434,10 @@ function initMap(div_id){
 					var k;
 
 					var keys = [ "maxheight", "maxheight:physical", "maxwidth",
-					             "maxlength", "maxweight", "maxaxleload", "toll",
+					             "maxlength", "maxweight", "maxweight:hgv", "maxweightrating",
+					             "maxaxleload", "toll",
 					             "hgv", "hazmat", "hazmat:water", "toll:N3",
-					             "toll:n3", "maxspeed:hgv", "fee",
+					             "toll:n3", "toll:hgv", "maxspeed:hgv", "fee",
 					             "hazmat:forward", "hazmat:backward",
 					             "maxweight:forward", "maxweight:backward"];
 

@@ -337,6 +337,10 @@ function getMaxweightStyleMap() {
 					maxweight = feature.attributes["maxweight:backward"];
 				if (maxweight == undefined)
 					maxweight = feature.attributes["maxweight"];
+				if (maxweight == undefined)
+					maxweight = feature.attributes["maxweight:hgv"];
+				if (maxweight == undefined)
+					maxweight = feature.attributes["maxweightrating"];
 				
 				if (!(maxweight == undefined)) {
 					try {
@@ -368,6 +372,10 @@ function getMaxweightStyleMap() {
 					res = res + "<-" + feature.attributes["maxweight:backward"] + " ";				
 				if (!(feature.attributes["maxweight"] == undefined)) 
 					res = res + feature.attributes["maxweight"];
+				if (!(feature.attributes["maxweight:hgv"] == undefined)) 
+					res = res + feature.attributes["maxweight:hgv"];
+				if (!(feature.attributes["maxweightrating"] == undefined)) 
+					res = res + feature.attributes["maxweightrating"];
 				
 				return res;
 			}
@@ -582,6 +590,12 @@ function getTollStyleMap() {
 				if (!(feature.attributes["toll:n3"] == undefined)) {
 					switch (feature.attributes["toll:n3"]) {
 					case "yes": return "#FF00FF"; 
+					case "no" : return "#00FF00";
+					}
+				}
+				if (!(feature.attributes["toll:hgv"] == undefined)) {
+					switch (feature.attributes["toll:hgv"]) {
+					case "yes": return "orange";
 					case "no" : return "#00FF00";
 					}
 				}
