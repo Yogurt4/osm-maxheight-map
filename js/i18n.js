@@ -26,11 +26,14 @@ OpenLayers.Lang.de = OpenLayers.Util.extend(OpenLayers.Lang.de, {
 	'edit'          : 'Bearbeiten',
 	'info'          : 'Details',
 	'info_title'    : 'OSM-Objekt in neuem Fenster öffnen',
+	'attribution'   : '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>-Mitwirkende',
+	'frenchstyle'   : 'OSM französischer Stil',
 	'germanstyle'   : 'OSM deutscher Stil',
 	'showlabel'     : 'Label ein/aus',
 	'showlabeltitle': 'Zeigt Maximalwerte für ausgewählte Layer direkt auf der Karte an',
 	'layerselection': 'Layerauswahl',
 	'mapdetails'    : 'Karten Details',
+	'sidebar'       : 'Sidebar',
 	'search'        : 'Ort suchen...',
 	'options'       : 'Darstellungsoptionen',
 	'opacity'       : 'Helligkeit',
@@ -38,6 +41,7 @@ OpenLayers.Lang.de = OpenLayers.Util.extend(OpenLayers.Lang.de, {
 	'vehicle_height': 'Fahrzeughöhe: ',
 	'vehicle_weight': 'Gewicht: ',
 	'simulation'    : 'Simulation',
+	'gpsposition'   : 'GPS-Position',
 	'locate'        : 'Meine Position',
 	'locate_title'  : 'Zeige meine aktuelle GPS Position',
 	'track'         : 'Auto Update',
@@ -59,8 +63,8 @@ OpenLayers.Lang.de = OpenLayers.Util.extend(OpenLayers.Lang.de, {
 	'export'        : 'Export',
 	'export_gpx'    : 'Als GPX exportieren',
 	'export_gpx_title': 'Exportiere Position aller fehlenden Maxheight Tags in GPX-Datei',	
-	'export_msg'    : 'Für den GPX Export bitte zunächst die Darstellung der Schnittpunkte von Linie auf Punkt ändern.'
-
+	'export_msg'    : 'Für den GPX Export bitte zunächst die Darstellung der Schnittpunkte von Linie auf Punkt ändern.',
+	'tagging'       : 'Attribute'
 });
 
 OpenLayers.Lang.en = OpenLayers.Util.extend(OpenLayers.Lang.en, {
@@ -87,11 +91,14 @@ OpenLayers.Lang.en = OpenLayers.Util.extend(OpenLayers.Lang.en, {
 	'edit'          : 'Edit',
 	'info'          : 'Details',
 	'info_title'    : 'Open OSM object in new window',
+	'attribution'   : '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+	'frenchstyle'   : 'OSM French Style',
 	'germanstyle'   : 'OSM German Style',
 	'showlabel'     : 'Show/Hide labels',
 	'showlabeltitle': 'Show maximum values for selected layers on map',
 	'layerselection': 'Layer selection',
 	'mapdetails'    : 'Map Details',
+	'sidebar'       : 'Sidebar',
 	'search'        : 'Search...',
 	'options'       : 'Options',
 	'opacity'       : 'Opacity',
@@ -99,6 +106,7 @@ OpenLayers.Lang.en = OpenLayers.Util.extend(OpenLayers.Lang.en, {
 	'vehicle_height': 'Vehicle Height: ',
 	'vehicle_weight': 'Weight: ',
 	'simulation'    : 'Simulation',
+	'gpsposition'   : 'GPS Position',
 	'locate'        : 'Locate me',
 	'locate_title'  : 'Show my current GPS position on the map',	
 	'track'         : 'Track my position',
@@ -120,8 +128,9 @@ OpenLayers.Lang.en = OpenLayers.Util.extend(OpenLayers.Lang.en, {
 	'export'        : 'Export',
 	'export_gpx'    : 'GPX export',
 	'export_gpx_title': 'Export all missing maxheight tag locations to a GPX file',
-	'export_msg'    : 'Please change intersection style to point first. Line style cannot be used for GPX export.'
-	});
+	'export_msg'    : 'Please change intersection style to point first. Line style cannot be used for GPX export.',
+	'tagging'       : 'Tagging'
+});
 
 // French translation by osm-operon
 OpenLayers.Lang.fr = OpenLayers.Util.extend(OpenLayers.Lang.fr, {
@@ -148,11 +157,14 @@ OpenLayers.Lang.fr = OpenLayers.Util.extend(OpenLayers.Lang.fr, {
 	'edit'          : 'Édition', 
 	'info'          : 'Détails',
 	'info_title'    : 'Open OSM object in new window',
+	'attribution'   : '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributeurs',
+	'frenchstyle'   : 'OSM style français',
 	'germanstyle'   : 'OSM style allemand', 
 	'showlabel'     : 'Affichage des labels oui/non', 
 	'showlabeltitle': 'Affichage des valeurs maxi directement sur le calque sélectionné',
 	'layerselection': 'Sélection de calque', 
 	'mapdetails'    : 'Détails de la carte',
+	'sidebar'       : 'Barre latérale',
 	'search'        : 'Recherche ...', 
 	'options'       : "Options d'affichage", 
 	'opacity' 		: 'Opacité', 
@@ -160,6 +172,7 @@ OpenLayers.Lang.fr = OpenLayers.Util.extend(OpenLayers.Lang.fr, {
 	'vehicle_height': 'Hauteur du véhicule: ', 
 	'vehicle_weight': 'Largeur du véhicule: ', 
 	'simulation'    : 'Simulation', 
+	'gpsposition'   : 'Position GPS',
 	'locate'        : 'Ma position', 
 	'locate_title'  : 'Show my current GPS position on the map',	
 	'track'         : 'Mise à jour automatique', 
@@ -181,8 +194,8 @@ OpenLayers.Lang.fr = OpenLayers.Util.extend(OpenLayers.Lang.fr, {
 	'export'        : 'Export', 
 	'export_gpx'    : 'Exportation fichier GPX',
 	'export_gpx_title': 'Export all missing maxheight tag locations to a GPX file',	
-	'export_msg'    : "Le GPX possède les coordonnées précise des points d'intersection."
-
+	'export_msg'    : "Le GPX possède les coordonnées précise des points d'intersection.",
+	'tagging'       : 'Attributes'
 });
 
 
@@ -211,11 +224,14 @@ OpenLayers.Lang.es = OpenLayers.Util.extend(OpenLayers.Lang.es, {
 'edit' : 'Editar',
 'info' : 'Detalles',
 'info_title' : 'Abrir objeto OSM en nueva ventana',
-'germanstyle' : 'Estilo Alemán OSM',
+'attribution' : '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> colaboradores',
+'frenchstyle' : 'Estilo francés OSM',
+'germanstyle' : 'Estilo alemán OSM',
 'showlabel' : 'Mostrar/Ocultar labels',
 'showlabeltitle': 'Mostrar valores máximos para las capas seleccionadas en el mapa',
 'layerselection': 'Selección de capas',
 'mapdetails' : 'Detalles del mapa',
+'sidebar' : 'Barra lateral',
 'search' : 'Buscar...',
 'options' : 'Opciones',
 'opacity' : 'Opacidad',
@@ -223,6 +239,7 @@ OpenLayers.Lang.es = OpenLayers.Util.extend(OpenLayers.Lang.es, {
 'vehicle_height': 'Altura del vehículo: ',
 'vehicle_weight': 'Peso: ',
 'simulation' : 'Simulación',
+'gpsposition' : 'Posición GPS',
 'locate' : 'Localízame',
 'locate_title' : 'Muéstrame mi posición gps actual en el mapa',
 'track' : 'Seguir mi posición',
@@ -244,5 +261,7 @@ OpenLayers.Lang.es = OpenLayers.Util.extend(OpenLayers.Lang.es, {
 'export' : 'Exportar',
 'export_gpx' : 'Exportación de GPX',
 'export_gpx_title': 'Exportar todas los lugares de la etiqueta alturaMax desaparecidos en un fichero GPX',
-'export_msg' : 'Por favor cambie el estilo de intersección a un punto primero. El estilo de la línea no puede ser utilizado para exportación GPX'
+'export_msg' : 'Por favor cambie el estilo de intersección a un punto primero. El estilo de la línea no puede ser utilizado para exportación GPX',
+'tagging' : 'Etiquetas'
+});
 });

@@ -172,13 +172,12 @@ function initMap(div_id){
 	//----------------------------------------------------------------------------
 
 	var osmLayer =  new OpenLayers.Layer.OSM("Mapnik", null, {
-//		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, data provided by <a href="https://github.com/mmd-osm/Overpass-API/wiki/Overpass-API-test754" target="_blank">Overpass Lab Preview</a>'
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+		attribution: OpenLayers.i18n("attribution")
 	});
 
 	map.addLayer(osmLayer);
 
-	map.addLayer (new OpenLayers.Layer.XYZ(OpenLayers.i18n("OSM French Style"), 
+	map.addLayer (new OpenLayers.Layer.XYZ(OpenLayers.i18n("frenchstyle"), 
 			[ "http://a.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
 			  "http://b.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png",
 			  "http://c.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png"],
