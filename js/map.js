@@ -37,7 +37,7 @@ function initMap(div_id){
 			OpenLayers.Lang.setCode(lang);
 		} else {
 			OpenLayers.Lang.setCode("de");
-			if (_global_languages != undefined && _global_languages.length > 0) {
+			if (typeof _global_languages !== 'undefined' && _global_languages.length > 0) {
 				OpenLayers.Lang.setCode(_global_languages[0]["code"]);
 			} else {
 				OpenLayers.Lang.setCode("de");
