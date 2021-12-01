@@ -223,7 +223,7 @@ function formatValue(text) {
     var result=[];
     for (var i=0; i<list.length;i++) {
         var value = html(OpenLayers.String.trim (list[i]));
-        if (value.substr (0,7)=='https://') {
+        if (value.substr (0,8)=='https://') {
             result.push ('<a target="_blank" href="'+value+'">'+value+'</a>');
             continue;
         }
